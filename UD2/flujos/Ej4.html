@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1 = prompt("Ingrese un número");
+        var num2 = prompt("Ingrese otro número");
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+
+       if(num1 > num2){
+            var resultSum = num1 + num2;
+            var resultRes = num1 - num2;
+
+            document.write("La suma de sus números introducidos es:"+ resultSum+"<br>");
+            document.write("La resta de sus números introducidos es:"+ resultRes);
+
+       }else{
+            document.write("La multiplicación de sus números introducidos es:"+ num1*num2+"<br>");
+            document.write("La división de sus números introducidos es:"+num1/num2);
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

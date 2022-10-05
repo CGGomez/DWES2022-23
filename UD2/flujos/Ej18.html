@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sueldos(){
+            var dineros = document.getElementById("Sueldo").value;
+            var tiempo = document.getElementById("años").value;
+
+            dineros = parseInt(dineros);
+            tiempo = parseInt(tiempo);
+
+            if(dineros > 1000){
+                document.write("Sueldo: "+dineros);
+            }else{
+                if(dineros < 1000 && tiempo >= 10){
+                    document.write("<br>Aumento del 20%"+ dineros * 20);
+                }else if (dineros < 1000 && tiempo < 10){
+                    document.write("<br>Aumento del 5%"+ dineros * 50);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="Sueldo">
+    <input type="text" id="años">
+    <button onclick="sueldos()">Enviar Datos</button>
+</body>
+</html>

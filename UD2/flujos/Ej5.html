@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n1 = prompt("Nota 1");
+        var n2 = prompt("Nota 2");
+        var n3 = prompt("Nota 3");
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2); 
+        n3 = parseInt(n3);
+
+        var resultado = (n1+ n2 + n3)/3;
+
+        console.log(resultado);
+
+        if(resultado < 5){
+            document.write("<br> Repetidor");
+        }else if (resultado >= 5 || resultado < 7){
+            document.write("<br> Superado");
+        }else if(resultado >= 7){
+            document.write("<br> Promocionado");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n1 = prompt("Introduzca un número, máximo 3 cifras");
+
+        var size = n1.length;
+
+        switch (size){
+            case 1: 
+                document.write("Tiene 1 cifra");
+                break;
+            case 2: 
+                document.write("Tiene 2 cifras");
+                break;
+            case 3:
+                document.write("Tiene 3 cifras");
+                break;
+            default:
+                alert("No es válido, mínimo 1 cifra, máximo 3");
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
